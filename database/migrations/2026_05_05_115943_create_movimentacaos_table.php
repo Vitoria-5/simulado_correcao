@@ -19,8 +19,8 @@ return new class extends Migration
             
             $table->foreignId('produto_id')->constrained();
             
-            $table->unsignedBigIntegerinteger('user_id');
-            $table->foreign('user_if')->references('id')->on('users');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
